@@ -1,0 +1,8 @@
+.ccls
+
+bin/
+obj/
+
+*.make
+Makefile
+premake5
