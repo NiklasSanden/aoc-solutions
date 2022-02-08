@@ -22,7 +22,9 @@ struct SolutionInfo {
 
 static const std::array solutions{
     SolutionInfo{ day1_1, "Day 01 Part 1", "1_in", "1_1_out" },
-    SolutionInfo{ day1_2, "Day 01 Part 2", "1_in", "1_2_out" }
+    SolutionInfo{ day1_2, "Day 01 Part 2", "1_in", "1_2_out" },
+    SolutionInfo{ day2_1, "Day 02 Part 1", "2_in", "2_1_out" },
+    SolutionInfo{ day2_2, "Day 02 Part 2", "2_in", "2_2_out" }
 };
 
 int main()
