@@ -35,9 +35,9 @@ int main()
         if (!input)
             throw std::runtime_error("File not found exception: " + input_file_path);
 
-        const auto start{ std::chrono::high_resolution_clock::now() };
+        const auto start{ std::chrono::steady_clock::now() };
         const auto output{ info.solution(input) };
-        const auto end{ std::chrono::high_resolution_clock::now() };
+        const auto end{ std::chrono::steady_clock::now() };
         const auto execution_time{
             std::chrono::duration_cast<std::chrono::duration<double, std::milli>>(end - start).count()
         };
