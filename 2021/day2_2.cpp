@@ -26,7 +26,7 @@ static std::istream& operator>>(std::istream& in, Input& input)
 
 std::string day2_2(std::istream& in)
 {
-    std::vector<Input> inputs{ std::istream_iterator<Input>{ in }, {} };
+    const std::vector<Input> inputs{ std::istream_iterator<Input>{ in }, {} };
     auto forwards{
         inputs
             | std::views::filter([](const auto& i) { return i.dir == forward; })

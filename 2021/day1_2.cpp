@@ -9,7 +9,7 @@
 constexpr int window_size{ 3 };
 std::string day1_2(std::istream& in)
 {
-    std::vector<int> values{ std::istream_iterator<int>{ in }, {} };
+    const std::vector<int> values{ std::istream_iterator<int>{ in }, {} };
 
     int value{ 0 };
     if (values.size() > static_cast<decltype(values)::size_type>(window_size)) {
