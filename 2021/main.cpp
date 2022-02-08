@@ -41,7 +41,9 @@ int main()
         const auto output{ info.solution(input) };
         const auto end{ std::chrono::steady_clock::now() };
         const auto execution_time{
-            std::chrono::duration_cast<std::chrono::duration<double, std::milli>>(end - start).count()
+            std::chrono::duration_cast<std::chrono::duration<double, std::milli>>(
+                end - start
+            ).count()
         };
 
         const auto output_file_path{ output_path + info.output_file };

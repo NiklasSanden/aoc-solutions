@@ -29,8 +29,8 @@ std::string day2_2(std::istream& in)
     std::vector<Input> inputs{ std::istream_iterator<Input>{ in }, {} };
     auto forwards{
         inputs
-        | std::views::filter([](const auto& i) { return i.dir == forward; })
-        | std::views::transform([](const auto& i) { return i.amount; })
+            | std::views::filter([](const auto& i) { return i.dir == forward; })
+            | std::views::transform([](const auto& i) { return i.amount; })
     };
     const auto horizontal{ std::reduce(forwards.begin(), forwards.end()) };
 
