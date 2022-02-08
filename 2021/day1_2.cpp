@@ -9,7 +9,6 @@
 constexpr int window_size{ 3 };
 std::string day1_2(std::istream& in)
 {
-    using namespace std::placeholders;
     std::vector<int> values{ std::istream_iterator<int>{ in }, {} };
 
     int value{ 0 };
@@ -18,7 +17,7 @@ std::string day1_2(std::istream& in)
         std::transform(values.cbegin() + window_size, values.cend(),
             values.cbegin(), differences.begin() + 1, std::minus{}
         );
-        value = std::ranges::count_if(differences, std::bind(std::greater{}, _1, 0));
+        value = std::ranges::count_if(differences, std::bind_front(std::less{}, 0));
     }
     return std::to_string(value);
 }
