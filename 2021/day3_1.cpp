@@ -1,6 +1,7 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <algorithm>
+#include <cassert>
 #include <cstddef>
 #include <istream>
 #include <iterator>
@@ -11,6 +12,7 @@
 std::string day3_1(std::istream& in)
 {
     const std::vector<std::string> values{ std::istream_iterator<std::string>{ in }, {} };
+    assert(!values.empty() && "Input read was empty");
 
     std::string gamma{ values.front() };
     std::string epsilon{ values.front() };

@@ -1,4 +1,4 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <algorithm>
 #include <istream>

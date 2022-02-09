@@ -1,4 +1,4 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <istream>
 #include <iterator>
@@ -35,9 +35,9 @@ std::string day2_2(std::istream& in)
     const auto horizontal{ std::reduce(forwards.begin(), forwards.end()) };
 
     const auto vertical{
-        std::accumulate(inputs.begin(), inputs.end(), 0,
-            [](const int a, const auto& b) {
-                static int aim{ 0 };
+        std::accumulate(inputs.cbegin(), inputs.cend(), 0,
+            [](const int a, const Input& b) {
+                static auto aim{ 0 };
                 if (b.dir == forward)
                     return a + b.amount * aim;
                 else {

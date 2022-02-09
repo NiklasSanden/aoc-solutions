@@ -1,4 +1,4 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <array>
 #include <chrono>
@@ -31,8 +31,8 @@ static const std::array solutions{
 
 int main()
 {
-    double total_time{ 0.0 };
-    int num_correct{ 0 };
+    auto total_time{ 0.0 };
+    auto num_correct{ 0 };
     for (const auto& info : solutions) {
         const auto input_file_path{ input_path + info.input_file };
         std::ifstream input{ input_file_path };
@@ -56,7 +56,7 @@ int main()
             std::istream_iterator<char>{ expected_output_file }, {}
         );
 
-        const bool is_correct{ output == expected_output };
+        const auto is_correct{ output == expected_output };
         std::cout
             << info.problem << '\n'
             << "\tExpected: " << expected_output << '\n'

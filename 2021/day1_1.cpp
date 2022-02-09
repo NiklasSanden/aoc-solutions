@@ -1,6 +1,7 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <algorithm>
+#include <cassert>
 #include <functional>
 #include <istream>
 #include <iterator>
@@ -10,8 +11,7 @@
 std::string day1_1(std::istream& in)
 {
     std::vector<int> values{ std::istream_iterator<int>{ in }, {} };
-    if (values.empty())
-        return "0";
+    assert(!values.empty() && "Input read was empty");
 
     std::adjacent_difference(values.cbegin(), values.cend(), values.begin());
     return std::to_string(

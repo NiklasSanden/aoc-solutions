@@ -1,6 +1,7 @@
-#include "solutions.hpp"
+#include "solutions.h"
 
 #include <algorithm>
+#include <cassert>
 #include <cstddef>
 #include <functional>
 #include <istream>
@@ -33,6 +34,8 @@ static int get_value(
 std::string day3_2(std::istream& in)
 {
     const std::vector<std::string> values{ std::istream_iterator<std::string>{ in }, {} };
+    assert(!values.empty() && "Input read was empty");
+
     const std::vector<std::string_view> view_of_values{ values.cbegin(), values.cend() };
     return std::to_string(
         get_value(view_of_values, std::greater_equal{}) * get_value(view_of_values, std::less{})
