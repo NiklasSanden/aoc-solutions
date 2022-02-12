@@ -9,39 +9,51 @@ Day 01 Part 1
 	Expected: 1722
 	Output: 1722
 	Correct?: true
-	Execution time: 0.538202 ms
+	Execution time: 0.562107 ms
 ===========================================
 Day 01 Part 2
 	Expected: 1748
 	Output: 1748
 	Correct?: true
-	Execution time: 0.215422 ms
+	Execution time: 0.268293 ms
 ===========================================
 Day 02 Part 1
 	Expected: 1635930
 	Output: 1635930
 	Correct?: true
-	Execution time: 0.15381 ms
+	Execution time: 0.131382 ms
 ===========================================
 Day 02 Part 2
 	Expected: 1781819478
 	Output: 1781819478
 	Correct?: true
-	Execution time: 0.142011 ms
+	Execution time: 0.102597 ms
 ===========================================
 Day 03 Part 1
 	Expected: 775304
 	Output: 775304
 	Correct?: true
-	Execution time: 0.074539 ms
+	Execution time: 0.056673 ms
 ===========================================
 Day 03 Part 2
 	Expected: 1370737
 	Output: 1370737
 	Correct?: true
-	Execution time: 0.127172 ms
+	Execution time: 0.078204 ms
+===========================================
+Day 04 Part 1
+	Expected: 55770
+	Output: 55770
+	Correct?: true
+	Execution time: 0.315102 ms
+===========================================
+Day 04 Part 2
+	Expected: 2980
+	Output: 2980
+	Correct?: true
+	Execution time: 0.380241 ms
 ===========================================
 Summary
-	Correct answers: 6/6
-	Total time: 1.25116 ms
+	Correct answers: 8/8
+	Total time: 1.8946 ms
 ```
